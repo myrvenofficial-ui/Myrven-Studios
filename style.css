@@ -1,0 +1,158 @@
+/* =========================
+   MYRVEN — DESIGN SYSTEM
+========================= */
+
+:root {
+  --background: #090909;
+  --surface: #111111;
+  --text: #ffffff;
+  --muted: #888888;
+  --accent: #c5c5c5;
+  --border: #222222;
+}
+
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/* Navigation */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 8%;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--text);
+}
+
+/* Hero */
+
+.hero {
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 100px 8%;
+}
+
+.tag {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: clamp(48px, 9vw, 110px);
+  line-height: 1.05;
+  letter-spacing: -5px;
+  max-width: 1000px;
+}
+
+h1 span {
+  color: #777777;
+}
+
+.description {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 550px;
+  margin-top: 30px;
+}
+
+/* Button */
+
+.cta {
+  display: inline-block;
+  margin-top: 40px;
+  padding: 16px 28px;
+  border: 1px solid var(--text);
+  color: var(--text);
+  text-decoration: none;
+  width: fit-content;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background: var(--text);
+  color: var(--background);
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 25px 8%;
+  display: flex;
+  justify-content: space-between;
+  color: #666666;
+  font-size: 12px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  header {
+    padding: 22px 6%;
+  }
+
+  nav a {
+    margin-left: 12px;
+    font-size: 12px;
+  }
+
+  .logo {
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
+
+  .hero {
+    padding: 80px 6%;
+  }
+
+  h1 {
+    letter-spacing: -2px;
+  }
+
+  footer {
+    padding: 22px 6%;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+}
