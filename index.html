@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MYRVEN — Built for Tomorrow</title>
+
+  <meta name="description"
+        content="MYRVEN is an independent venture driven by innovation, technology, creativity, and ambition.">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #090909;
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 28px 8%;
+      border-bottom: 1px solid #1c1c1c;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 5px;
+    }
+
+    nav a {
+      color: #999999;
+      text-decoration: none;
+      margin-left: 30px;
+      font-size: 14px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 100px 8%;
+    }
+
+    .tag {
+      color: #888888;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: clamp(48px, 9vw, 110px);
+      line-height: 1.05;
+      letter-spacing: -5px;
+      max-width: 1000px;
+    }
+
+    h1 span {
+      color: #777777;
+    }
+
+    .description {
+      color: #999999;
+      font-size: 17px;
+      line-height: 1.8;
+      max-width: 550px;
+      margin-top: 30px;
+    }
+
+    .cta {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 16px 28px;
+      border: 1px solid #ffffff;
+      color: #ffffff;
+      text-decoration: none;
+      width: fit-content;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .cta:hover {
+      background: #ffffff;
+      color: #090909;
+    }
+
+    footer {
+      border-top: 1px solid #1c1c1c;
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      color: #666666;
+      font-size: 12px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 22px 6%;
+      }
+
+      nav a {
+        margin-left: 12px;
+        font-size: 12px;
+      }
+
+      .logo {
+        font-size: 19px;
+        letter-spacing: 3px;
+      }
+
+      .hero {
+        padding: 80px 6%;
+      }
+
+      h1 {
+        letter-spacing: -2px;
+      }
+
+      footer {
+        padding: 22px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MYRVEN</div>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+
+      <p class="tag">Independent Venture · Est. 2026</p>
+
+      <h1>
+        Built for<br>
+        <span>tomorrow.</span>
+      </h1>
+
+      <p class="description">
+        Driven by possibility. We explore ideas, build innovative
+        solutions, and create things that move the future forward.
+      </p>
+
+      <a href="#contact" class="cta">
+        Let's build something →
+      </a>
+
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>© 2026 MYRVEN</p>
+    <p>Built for tomorrow. Driven by possibility.</p>
+  </footer>
+
+</body>
+</html>
