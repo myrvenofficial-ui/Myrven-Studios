@@ -994,3 +994,87 @@ h1 span {
     margin: 35px 0 50px;
   }
 }
+/* =========================
+   MYRVEN CONTACT PAGE
+========================= */
+
+.contact-page {
+  padding: 100px 8%;
+  min-height: 80vh;
+}
+
+.contact-page h1 {
+  font-size: clamp(42px, 7vw, 85px);
+  line-height: 1.1;
+  letter-spacing: -3px;
+  margin-top: 25px;
+}
+
+.contact-page h1 span {
+  color: #777777;
+}
+
+.contact-page .page-description {
+  max-width: 550px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+  margin: 25px 0 50px;
+}
+
+.contact-details {
+  max-width: 650px;
+  border-top: 1px solid var(--border);
+}
+
+.contact-item {
+  padding: 25px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-item span {
+  color: #777777;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.contact-item p {
+  color: #dddddd;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 12px;
+}
+
+.contact-cta {
+  margin-top: 40px;
+}
+
+.contact-cta .btn {
+  display: inline-block;
+  padding: 15px 25px;
+  border: 1px solid #555555;
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-cta .btn:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .contact-page {
+    padding: 70px 6%;
+  }
+
+  .contact-page h1 {
+    letter-spacing: -2px;
+  }
+
+  .contact-page .page-description {
+    margin-bottom: 35px;
+  }
+}
