@@ -919,3 +919,78 @@ h1 span {
     height: 230px;
   }
 }
+/* =========================
+   MYRVEN ABOUT PAGE
+========================= */
+
+.about-page {
+  padding: 100px 8%;
+  min-height: 80vh;
+}
+
+.about-page h1 {
+  font-size: clamp(42px, 7vw, 85px);
+  line-height: 1.1;
+  letter-spacing: -3px;
+  margin-top: 25px;
+}
+
+.about-page h1 span {
+  color: #777777;
+}
+
+.about-intro {
+  max-width: 650px;
+  margin: 50px 0 70px;
+}
+
+.about-intro p {
+  color: #aaaaaa;
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+
+.about-intro p:first-child {
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.about-details {
+  max-width: 850px;
+  border-top: 1px solid var(--border);
+}
+
+.about-page .detail-item {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-page .detail-item span {
+  color: #777777;
+  font-size: 11px;
+  letter-spacing: 3px;
+}
+
+.about-page .detail-item p {
+  color: #dddddd;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 15px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .about-page {
+    padding: 70px 6%;
+  }
+
+  .about-page h1 {
+    letter-spacing: -2px;
+  }
+
+  .about-intro {
+    margin: 35px 0 50px;
+  }
+}
