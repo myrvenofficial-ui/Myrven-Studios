@@ -655,3 +655,110 @@ h1 span {
     gap: 12px;
   }
 }
+/* =========================
+   MYRVEN FUTURISTIC HERO
+========================= */
+
+.hero {
+  min-height: 88vh;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Ambient silver glow */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -100px;
+  right: -150px;
+
+  background: radial-gradient(
+    circle,
+    rgba(180, 180, 180, 0.10),
+    transparent 70%
+  );
+
+  filter: blur(40px);
+  z-index: -1;
+}
+
+/* Futuristic grid */
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 70px 70px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 90%
+  );
+
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Premium headline */
+
+.hero h1 {
+  max-width: 900px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Ambient animation */
+
+@keyframes ambientGlow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.hero::before {
+  animation: ambientGlow 6s ease-in-out infinite;
+}
+
+/* Mobile optimization */
+
+@media (max-width: 600px) {
+  .hero::before {
+    width: 350px;
+    height: 350px;
+    right: -180px;
+    top: 0;
+  }
+
+  .hero::after {
+    background-size: 45px 45px;
+  }
+}
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .hero::before {
+    animation: none;
+  }
+}
